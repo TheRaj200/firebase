@@ -133,7 +133,7 @@ const TodoList = () => {
       <div className="bg-[crimson] ml-[30%] w-[50%] p-4 mb-4 rounded-lg">
         <h2 className="text-2xl mb-4">To-Do Lists</h2>
         <input
-          className="my-4 text-zinc-900 mx-6 py-1 rounded-md px-2"
+          className="my-4  mx-6 py-1 rounded-md px-2"
           type="text"
           value={newListName}
           onChange={(e) => setNewListName(e.target.value)}
@@ -150,27 +150,27 @@ const TodoList = () => {
                 <h3 className="">{list.name}</h3>
                 </div>
                 <input
-                  className="my-4 mx-6 text-zinc-900 py-1 rounded-md px-2"
+                  className="my-4 mx-6  py-1 rounded-md px-2"
                   type="text"
                   value={newTasks[list.id]?.title || ""}
                   onChange={(e) => handleNewTaskChange(list.id, "title", e.target.value)}
                   placeholder="Task Title"
                 />
                 <input
-                  className="my-2 mx-6 text-zinc-900 py-1 rounded-md px-2"
+                  className="my-2 mx-6  py-1 rounded-md px-2"
                   type="text"
                   value={newTasks[list.id]?.description || ""}
                   onChange={(e) => handleNewTaskChange(list.id, "description", e.target.value)}
                   placeholder="Task Description"
                 />
                 <input
-                  className="my-2 mx-2 text-zinc-900 py-1 rounded-md px-2"
+                  className="my-2 mx-2  py-1 rounded-md px-2"
                   type="date"
                   value={newTasks[list.id]?.dueDate || ""}
                   onChange={(e) => handleNewTaskChange(list.id, "dueDate", e.target.value)}
                 />
                 <select
-                  className="my-2 mx-2 text-zinc-900 py-1 rounded-md px-2"
+                  className="my-2 mx-2  py-1 rounded-md px-2"
                   value={newTasks[list.id]?.priority || ""}
                   onChange={(e) => handleNewTaskChange(list.id, "priority", e.target.value)}
                 >

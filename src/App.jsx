@@ -7,8 +7,7 @@ import TodoList from "./components/TodoList";
 
 const App = () => {
   return (
-    <div  className="felx w-full h-full justify-center items-center">
-
+    <div  className="felx w-full bg-zinc-900 h-full justify-center items-center">
   <Router>
       <Routes>
         <Route path="/signup" element={<Signup />} />

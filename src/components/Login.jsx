@@ -41,7 +41,7 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
       />
-      <button  className="mx-6"  onClick={handleLogin}>Login</button>
+      <button  className='text-zinc-50 mx-6'  onClick={handleLogin}>Login</button>
       <p className='text-zinc-100'>Don't have an account? <a className="text-zinc-950 drop-shadow-xl hover:text-zinc-900 " href="/signup">Register</a></p>
     </div>
   );

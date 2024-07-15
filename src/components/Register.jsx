@@ -46,7 +46,7 @@ const Register = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleRegister}>Register</button>
+      <button className='text-zinc-50' onClick={handleRegister}>Register</button>
       <p className='text-zinc-100'>You have an account? <a className="text-zinc-950 drop-shadow-xl hover:text-zinc-900 " href="/">Login</a></p>
       
       </div>
