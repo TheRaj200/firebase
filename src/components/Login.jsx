@@ -26,7 +26,7 @@ const Login = () => {
       <h2  className='text-zinc-950 font-semibold text-2xl'>Login</h2>
       {error && <p style={{ color: "white" }}>{error}</p>}
       <input
-            className='pl-4  text-zinc-950 rounded-md border-zinc-600 border-[2px]'
+            className='pl-4   rounded-md border-zinc-600 border-[2px]'
 
         type="email"
         value={email}
@@ -34,7 +34,7 @@ const Login = () => {
         placeholder="Email"
       />
       <input
-             className='pl-4  text-zinc-950 rounded-md border-zinc-600 border-[2px]'
+             className='pl-4   rounded-md border-zinc-600 border-[2px]'
 
         type="password"
         value={password}

@@ -33,14 +33,14 @@ const Register = () => {
     
       <h1 className='text-zinc-950 font-semibold text-2xl'>Register User</h1>
       <input
-       className='pl-4 text-zinc-950 mt-4 min-h-[5vh] rounded-md border-zinc-600 border-[2px]'
+       className='pl-4  mt-4 min-h-[5vh] rounded-md border-zinc-600 border-[2px]'
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
-      className='pl-4 text-zinc-950 h-[5vh] rounded-md border-zinc-600 border-[2px]'
+      className='pl-4  h-[5vh] rounded-md border-zinc-600 border-[2px]'
         type="password"
         placeholder="Create Password"
         value={password}
