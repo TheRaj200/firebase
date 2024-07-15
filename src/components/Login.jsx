@@ -22,24 +22,27 @@ const Login = () => {
 
   return (
 
-    <div>
-      <h2  className="mt-10 text-xl ">Login</h2>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+   <div className='bg-[crimson] mt-[15vh]  w-[45vh] min-h-[40vh] p-4 flex flex-col gap-4 rounded-xl items-center '>
+      <h2  className='text-zinc-950 font-semibold text-2xl'>Login</h2>
+      {error && <p style={{ color: "white" }}>{error}</p>}
       <input
-         className="my-4  mx-6 py-1 rounded-md px-2 "
+            className='pl-4  text-zinc-950 rounded-md border-zinc-600 border-[2px]'
+
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Email"
       />
       <input
-         className="my-4  mx-6 py-1 rounded-md px-2 "
+             className='pl-4  text-zinc-950 rounded-md border-zinc-600 border-[2px]'
+
         type="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
       />
       <button  className="mx-6"  onClick={handleLogin}>Login</button>
+      <p className='text-zinc-100'>Don't have an account? <a className="text-zinc-950 drop-shadow-xl hover:text-zinc-900 " href="/signup">Register</a></p>
     </div>
   );
 };
